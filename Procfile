@@ -1,1 +1,1 @@
-web: node src/test-route.js
+web: node server.js
