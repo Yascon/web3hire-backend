@@ -32,9 +32,36 @@ app.get('/api/jobs', (req, res) => {
   res.json({
     success: true,
     data: [
-      { id: 1, title: 'Senior Solidity Developer', company: 'Web3 Startup', location: 'Remote' },
-      { id: 2, title: 'Frontend Developer', company: 'DeFi Protocol', location: 'Singapore' },
-      { id: 3, title: 'Blockchain Engineer', company: 'NFT Marketplace', location: 'Berlin' }
+      { 
+        id: 1, 
+        title: 'Senior Solidity Developer', 
+        company: { name: 'Web3 Startup', logo: 'https://avatars.dicebear.com/api/identicon/web3startup.svg' }, 
+        location: 'Remote',
+        salary: '$120K - $150K',
+        skills: ['Solidity', 'Ethereum', 'Smart Contracts'],
+        remote: true,
+        createdAt: new Date().toISOString()
+      },
+      { 
+        id: 2, 
+        title: 'Frontend Developer', 
+        company: { name: 'DeFi Protocol', logo: 'https://avatars.dicebear.com/api/identicon/defiprotocol.svg' }, 
+        location: 'Singapore',
+        salary: '$90K - $120K',
+        skills: ['React', 'Web3.js', 'TypeScript'],
+        remote: false,
+        createdAt: new Date().toISOString()
+      },
+      { 
+        id: 3, 
+        title: 'Blockchain Engineer', 
+        company: { name: 'NFT Marketplace', logo: 'https://avatars.dicebear.com/api/identicon/nftmarketplace.svg' }, 
+        location: 'Berlin',
+        salary: '$100K - $130K',
+        skills: ['Blockchain', 'NFT', 'JavaScript'],
+        remote: false,
+        createdAt: new Date().toISOString()
+      }
     ]
   });
 });
