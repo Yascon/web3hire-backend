@@ -4,10 +4,18 @@ const cors = require('cors');
 
 // 启用 CORS
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || '*',
+  origin: ['https://www.web3hire.xyz', 'https://web3hire-site.vercel.app', 'http://localhost:3000'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
+
+// 添加 CORS 头部
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
 
 // 基本路由
 app.get('/', (req, res) => {
