@@ -43,7 +43,7 @@ app.get('/api/jobs', (req, res) => {
       { 
         id: 1, 
         title: 'Senior Solidity Developer', 
-        company: { name: 'Web3 Startup', logo: 'https://avatars.dicebear.com/api/identicon/web3startup.svg' }, 
+        company: { name: 'Web3 Startup', logo: 'https://api.dicebear.com/7.x/shapes/svg?seed=Web3%20Startup&backgroundColor=2563eb,4f46e5,7c3aed,9333ea&backgroundType=gradientLinear' }, 
         location: 'Remote',
         salary: '$120K - $150K',
         skills: ['Solidity', 'Ethereum', 'Smart Contracts'],
@@ -53,7 +53,7 @@ app.get('/api/jobs', (req, res) => {
       { 
         id: 2, 
         title: 'Frontend Developer', 
-        company: { name: 'DeFi Protocol', logo: 'https://avatars.dicebear.com/api/identicon/defiprotocol.svg' }, 
+        company: { name: 'DeFi Protocol', logo: 'https://api.dicebear.com/7.x/shapes/svg?seed=DeFi%20Protocol&backgroundColor=2563eb,4f46e5,7c3aed,9333ea&backgroundType=gradientLinear' }, 
         location: 'Singapore',
         salary: '$90K - $120K',
         skills: ['React', 'Web3.js', 'TypeScript'],
@@ -63,7 +63,7 @@ app.get('/api/jobs', (req, res) => {
       { 
         id: 3, 
         title: 'Blockchain Engineer', 
-        company: { name: 'NFT Marketplace', logo: 'https://avatars.dicebear.com/api/identicon/nftmarketplace.svg' }, 
+        company: { name: 'NFT Marketplace', logo: 'https://api.dicebear.com/7.x/shapes/svg?seed=NFT%20Marketplace&backgroundColor=2563eb,4f46e5,7c3aed,9333ea&backgroundType=gradientLinear' }, 
         location: 'Berlin',
         salary: '$100K - $130K',
         skills: ['Blockchain', 'NFT', 'JavaScript'],
